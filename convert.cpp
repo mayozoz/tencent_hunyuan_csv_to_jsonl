@@ -1,6 +1,4 @@
-// program converts csv file input to jsonl file output in format id, value, query (optional)
-// might need c++11 to compile: g++ -std=c++11 convert.cpp -o convert
-// split file: split -l $(( $(wc -l < FILE_NAME.jsonl) / 6 )) FILE_NAME.jsonl OUT_FILE_INDEX_
+// program converts csv file input to jsonl file output in format id, value, query (optional, default: sname, if sname empty: account_name)
 
 #include <iostream>
 #include <fstream>
